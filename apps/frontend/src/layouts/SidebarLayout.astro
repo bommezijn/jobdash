@@ -1,0 +1,13 @@
+---
+// src/layouts/MainLayout.astro
+import '../styles/global.css';
+import {SidebarWrapper} from '../components/layout/SidebarWrapper.tsx';
+---
+<html>
+  <body class="flex flex-col min-h-screen bg-term-background">
+    <SidebarWrapper />
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

@@ -1,5 +1,6 @@
 ---
-import BaseLayout from '../layouts/Layout.astro';
+// import BaseLayout from '../layouts/Layout.astro';
+import SidebarLayout from '../layouts/SidebarLayout.astro';
 // Component Imports
 import Counter from '../components/Counter';
 
@@ -11,8 +12,8 @@ const someProps = {
 // https://docs.astro.build/basics/astro-components/
 ---
 
-<BaseLayout>
+<SidebarLayout>
     <Counter {...someProps} client:visible>
         <h1>Hello, React!</h1>
     </Counter>
-</BaseLayout>
+</SidebarLayout>
